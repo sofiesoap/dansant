@@ -2,18 +2,31 @@
 <html lang=en>
   <head>
     <meta charset="utf-8">
-    <title>No fantasy</title>
+    <title>No dinner</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Help me find my fantasy</h1>
+    <h1>Help me find my dinner</h1>
     <img src="whereismy.png">
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="Say something loving"></input>
+        <input placeholder="Say something loving">
       </div>
       <button class="addOption">Add</button>
     </div>
+      <div class="resultSection"></div>
     <button class="goOption">Go!</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option=function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>
