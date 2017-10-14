@@ -43,6 +43,14 @@ input {
   font-size: 16px;
 }
 
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
 .goOption {
   margin-top: 10px;
   background-color: #B0C4DE;
